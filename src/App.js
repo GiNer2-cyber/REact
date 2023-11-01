@@ -1,11 +1,11 @@
-import {Simpsons} from "./components/SimpsonContainer/Simpsons";
-import {Characters} from "./components/CharactersContainer/Characters";
+import {UsersContainer} from "./components/UsersContainer/UsersContainer";
+import {CommentsContainer} from "./components/CommentsContainer/CommentsContainer";
 
 const App = () => {
     return (
-        <div>
-            {<Simpsons/>}
-            <Characters/>
+        <div style={{display: 'flex'}}>
+            <UsersContainer/>
+            <CommentsContainer/>
         </div>
     );
 };

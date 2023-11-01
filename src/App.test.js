@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import {UsersContainer} from "./components/UsersContainer/UsersContainer";
+import {CommentsContainer} from "./components/CommentsContainer/CommentsContainer";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+const App = () => {
+  return (
+      <div style={{display: 'flex'}}>
+        <UsersContainer/>
+        <CommentsContainer/>
+      </div>
+  );
+};
+
+export {App};
